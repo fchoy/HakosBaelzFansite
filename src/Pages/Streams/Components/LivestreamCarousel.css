@@ -2,8 +2,14 @@
     display:none; /*hides navigation buttons if we are on the first slide or last slide*/  
 }
 
-@media screen and (max-height : 768px) {
+@media screen and (max-width : 768px), screen and (min-width : 401px) {
     .livestream-swiper-container{
         padding-bottom : 5%;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .livestream-swiper-container{
+        padding-bottom : 10%;
     }
 }
