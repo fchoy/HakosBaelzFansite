@@ -1,0 +1,11 @@
+@keyframes navBorderAnimated {
+    
+    from {
+        border-top : 1px solid inherit;
+        width : 0%;
+    }
+
+    24% {
+
+    }
+}

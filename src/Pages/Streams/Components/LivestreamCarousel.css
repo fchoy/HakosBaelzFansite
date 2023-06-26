@@ -1,0 +1,9 @@
+.swiper-button-disabled{
+    display:none; /*hides navigation buttons if we are on the first slide or last slide*/  
+}
+
+@media screen and (max-height : 768px) {
+    .livestream-swiper-container{
+        padding-bottom : 5%;
+    }
+}

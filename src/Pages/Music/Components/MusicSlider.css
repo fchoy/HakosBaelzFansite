@@ -1,0 +1,4 @@
+.swiper-button-disabled{
+    display:none; /*hides navigation buttons if we are on the first slide or last slide*/  
+}
+
