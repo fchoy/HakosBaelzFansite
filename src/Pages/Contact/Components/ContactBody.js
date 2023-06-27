@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactBody = () => {
   return (
-    <section class="dark:bg-white bg-red-600 p-10">
+    <section class="dark:bg-white bg-red-600 p-10 h-fit border">
       <div class="py-8 px-8 mx-auto max-w-screen-md bg-gray-200">
 
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Bae!</h2>
