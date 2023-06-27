@@ -45,7 +45,7 @@ const MerchSlider = () => {
       >
         {merchData.map((item) => (
             <SwiperSlide key={item.id} className="merch-swiper-slide hover:opacity-90">
-                <div className ="lg:w-fit lg:h-full w-1/2 h-1/2 mx-auto rounded overflow-hidden shadow-lg my-auto bg-white flex flex-col">
+                <div className ="md:w-fit md:h-full w-1/2 h-1/2 mx-auto rounded overflow-hidden shadow-lg my-auto bg-white flex flex-col">
 
                   <a href={item.link} target="_blank" rel="noreferrer" className='hover:cursor-pointer'>
                     <div className="md:h-full h-1/2 flex-wrap">
