@@ -44,24 +44,29 @@ const MerchSlider = () => {
         }}
       >
         {merchData.map((item) => (
-            <SwiperSlide key={item.id} className="merch-swiper-slide hover:opacity-90 hover:cursor-pointer ">
-              <a href={item.link} target="_blank" rel="noreferrer">
-                <div className="lg:w-fit w-4/6 mx-auto h-fit rounded overflow-hidden shadow-lg my-auto bg-white flex flex-col flex-wrap">
-                  
-                  <img className="md:h-4/6 md:w-full h-fit" src={item.img} alt="Bae Merch One"/>
+            <SwiperSlide key={item.id} className="merch-swiper-slide hover:opacity-90">
+                <div className ="lg:w-fit lg:h-full w-1/2 h-1/2 mx-auto rounded overflow-hidden shadow-lg my-auto bg-white flex flex-col">
+
+                  <a href={item.link} target="_blank" rel="noreferrer" className='hover:cursor-pointer'>
+                    <div className="md:h-full h-1/2 flex-wrap">
+                      <img className='aspect-square' src={item.img} alt="Bae Merch One"/>
+                    </div>
+                  </a>
+
 
                   <div className="md:px-6 md:py-4 2xl:h-32 lg:full md:h-72 h-auto text-center">
                     <div className="font-bold text-lg mb-2">{item.title}</div>
                     <p className="text-gray-700 text-base text-md">{item.description}</p>
                   </div>
 
-                  <div className="px-6 pt-4 pb-2 w-fit mx-auto">
-                      <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                        {item.price}
-                      </span>
-                  </div>
+                  <a href={item.link} target="_blank" rel="noreferrer" className='hover:cursor-pointer'>
+                    <div className="px-6 pt-4 pb-2 w-fit mx-auto">
+                        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                          {item.price}
+                        </span>
+                    </div>
+                  </a>
                 </div>
-              </a>
             </SwiperSlide>
         ))}
       </Swiper>
