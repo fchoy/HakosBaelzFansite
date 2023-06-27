@@ -11,7 +11,7 @@ import '../Components/MerchSlider.css'
 
 const MerchSlider = () => {
   return (
-    <div className="md:h-fit h-full w-full">
+    <div className="md:h-fit flex flex-col w-full">
       <h1 className="text-4xl text-center text-gray-50 font-medium mb-5" style={{ fontFamily: "boldenvan, sans-serif" }}>Bae's Merch!</h1>
       <Swiper
         className="lg:w-10/12 md:w-screen merch-swiper-container"
@@ -44,9 +44,9 @@ const MerchSlider = () => {
         }}
       >
         {merchData.map((item) => (
-            <SwiperSlide key={item.id} className="merch-swiper-slide hover:opacity-90 hover:cursor-pointer">
+            <SwiperSlide key={item.id} className="merch-swiper-slide hover:opacity-90 hover:cursor-pointer ">
               <a href={item.link} target="_blank" rel="noreferrer">
-                <div className="lg:w-fit w-4/6 mx-auto h-fit rounded overflow-hidden shadow-lg my-auto bg-white">
+                <div className="lg:w-fit w-4/6 mx-auto h-fit rounded overflow-hidden shadow-lg my-auto bg-white flex flex-col flex-wrap">
                   
                   <img className="md:h-4/6 md:w-full h-fit" src={item.img} alt="Bae Merch One"/>
 
