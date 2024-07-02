@@ -5,6 +5,7 @@ import Merch from "./Pages/Merch/Merch";
 import Music from "./Pages/Music/Music";
 import Streams from "./Pages/Streams/Streams";
 
+import { Helmet } from 'react-helmet';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -33,6 +34,9 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
+      <Helmet>
+        <meta name="robots" content="noindex" />
+      </Helmet>
       <RouterProvider router={router} />
     </>
   );
